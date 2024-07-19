@@ -123,7 +123,7 @@ SCHEMA_SETUP() {
 
     for file in schema master-data app-user; do
       PRINT Load file - $file.sql
-      mysql -h mysql.dev.rdevopsb80.online -uroot -pRoboShop@1 < /app/db/$file.sql &>>$LOG_FILE
+      mysql -h mysql.dev.sydevops80.online -uroot -pRoboShop@1 < /app/db/$file.sql &>>$LOG_FILE
       STAT $?
     done
 
